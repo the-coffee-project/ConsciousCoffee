@@ -8,7 +8,9 @@
  */
 
 import React, {Component} from 'react';
+import HelloWorldScreen from 'screens/HelloWorldScreen';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import {createStackNavigator, createAppContainer} from "react-navigation";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -31,15 +33,14 @@ export default class App extends Component<Props> {
   }
 }
 */
-export default class HelloWorldApp extends Component {
-  render() {
-    return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: '#F5FCFF' }}>
-        <Text>Hello world!</Text>
-      </View>
-    );
+
+const AppNavigator = createStackNavigator({
+  Home: {
+    screen: HelloWorldScreen
   }
-}
+});
+
+export default createAppContainer(AppNavigator);
 
 const styles = StyleSheet.create({
   container: {
