@@ -8,7 +8,8 @@
  */
 
 import React, {Component} from 'react';
-import HelloWorldScreen from 'screens/HelloWorldScreen';
+import CafeListScreen from 'screens/CafeListScreen';
+import CafeDetailsScreen from 'screens/CafeDetailsScreen';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import {createStackNavigator, createAppContainer} from "react-navigation";
 
@@ -36,11 +37,20 @@ export default class App extends Component<Props> {
 
 const AppNavigator = createStackNavigator({
   Home: {
-    screen: HelloWorldScreen
+    screen: CafeListScreen
+  },
+  Details: {
+    screen: CafeDetailsScreen
   }
 });
 
-export default createAppContainer(AppNavigator);
+const AppContainer = createAppContainer(AppNavigator);
+
+export default class App extends React.Component {
+  render() {
+    return <AppContainer />;
+  }
+}
 
 const styles = StyleSheet.create({
   container: {

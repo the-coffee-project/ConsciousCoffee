@@ -1,26 +1,7 @@
 {
     "cafes": [
         {
-            "name": "Algorithm Coffee Company",
-            "hours": "M: 8am - 3pm\nTu: 8am - 3pm\nW: 8am - 3pm\nTh: 8am - 3pm\nF: 8am - 3pm\nSat: 9am - 5pm\nSun: 9am - 5pm",
-            "address": "1122 University Ave, Berkeley, CA 94702",
-            "directTrade": 0,
-            "fairTrade": 0,
-            "organic": 0,
-            "tradeDescription": "",
-            "cafeDescription": ""
-        },
-        {
-            "name": "Babette (BAMFA)",
-            "hours": "M: Closed\nT: Closed\nW: 9am - 7pm\nTh 9am - 7pm\nF: 9am - 7pm\nSat: 11am - 7pm\nSun: 11am - 7pm",
-            "address": "2120 Oxford St, Berkeley, CA 94720",
-            "directTrade": 1,
-            "fairTrade": 0,
-            "organic": 0,
-            "tradeDescription": "",
-            "cafeDescription": ""
-        },
-        {
+            "id": 0,
             "name": "",
             "hours": "",
             "address": "",
@@ -28,7 +9,35 @@
             "fairTrade": 0,
             "organic": 0,
             "tradeDescription": "",
-            "cafeDescription": ""
+            "cafeDescription": "",
+            "latitude": 0,
+            "longitude": 0
+        },
+        {
+            "id": 1,
+            "name": "Algorithm Coffee Company",
+            "hours": "M: 8am - 3pm\nTu: 8am - 3pm\nW: 8am - 3pm\nTh: 8am - 3pm\nF: 8am - 3pm\nSat: 9am - 5pm\nSun: 9am - 5pm",
+            "address": "1122 University Ave, Berkeley, CA 94702",
+            "directTrade": 0,
+            "fairTrade": 0,
+            "organic": 0,
+            "tradeDescription": "",
+            "cafeDescription": "",
+            "latitude": 37.869165,
+            "longitude": -122.290664
+        },
+        {
+            "id": 2,
+            "name": "Babette (BAMFA)",
+            "hours": "M: Closed\nT: Closed\nW: 9am - 7pm\nTh 9am - 7pm\nF: 9am - 7pm\nSat: 11am - 7pm\nSun: 11am - 7pm",
+            "address": "2120 Oxford St, Berkeley, CA 94720",
+            "directTrade": 1,
+            "fairTrade": 0,
+            "organic": 0,
+            "tradeDescription": "",
+            "cafeDescription": "",
+            "latitude": 37.870637,
+            "longitude": -122.266446
         }
     ]
 }
