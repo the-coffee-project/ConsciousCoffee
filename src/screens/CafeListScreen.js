@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
-import {View, Text, FlatList, StyleSheet} from 'react-native';
+import {Image, View, Text, FlatList, StyleSheet} from 'react-native';
 import {List, ListItem} from 'react-native-elements';
+import {BadgeImages} from 'res/Images.js';
 
 import customData from 'res/cafe-data.json';
+import { Separator } from 'native-base';
 const data = customData.cafes;
+const badgeData = customData.badges;
 
-const extractKey = ({id}) => id.toString()
+const extractKey = ({id}) => id.toString();
 
 export default class CafeListScreen extends Component {
 
@@ -17,9 +20,9 @@ export default class CafeListScreen extends Component {
       longitude: null,
       error: null,
       cafes: data,
-      distance: "none so far",
     };
     this.updateCafeDistances = this.updateCafeDistances.bind(this);
+    this.loadLocation = this.loadLocation.bind(this);
   }
 
   updateCafeDistances(position) {
@@ -44,7 +47,7 @@ export default class CafeListScreen extends Component {
     });
   }
 
-  componentDidMount() {
+  loadLocation() {
     navigator.geolocation.getCurrentPosition(
       this.updateCafeDistances,
       (error) => { 
@@ -54,6 +57,10 @@ export default class CafeListScreen extends Component {
       },
       { enableHighAccuracy: true, timeout: 5000, maximumAge: 10000 },
     );
+  }
+
+  componentDidMount() {
+    this.loadLocation();
   }
 
   calcDistance(lat1, lon1, lat2, lon2) {
@@ -73,11 +80,42 @@ export default class CafeListScreen extends Component {
     return R * c;
   }
 
+  loadBadges(badges) {
+    let items = [];
+    for (let i = 0; i < badges.length; i++) {
+      if (badges[i] == 1) {
+        uri = badgeData.names[i] + "Badge.png";
+        items.push({
+          key: i,
+          name: badgeData.names[i],
+          logoURI: uri
+        })
+      }
+    }
+    let badgeImageArr = items.map((badge) => (
+      <Image style={styles.badge} key={badge.key} source={BadgeImages[badge.logoURI]} />
+    ));
+    return badgeImageArr;
+  }
+
+  renderSeparator = ({leadingItem, highlight}) => {
+    return (<View style={styles.separator}></View>);
+  }
+
   renderItem = ({ item }) => {
+    let badgeImageArr = this.loadBadges(item.badges);
     return (
       <ListItem
         title={item.name}
-        subtitle={item.distanceText}
+        subtitle={
+          <View style={styles.subtitleView}>
+            <View style={styles.badgesRow}>
+              {badgeImageArr}
+            </View>
+            <Text style={styles.distanceText}>{item.distanceText}</Text>
+          </View>
+        }
+        rightAvatar={<Image style={styles.avatar} source={BadgeImages['fairTradeBadge.png']} />}
         onPress={() => {this.props.navigation.push('Details', item)}}
         chevron
       />
@@ -91,6 +129,9 @@ export default class CafeListScreen extends Component {
         data={this.state.cafes}
         renderItem={this.renderItem}
         keyExtractor={extractKey}
+        ItemSeparatorComponent={this.renderSeparator}
+        onRefresh={this.loadLocation}
+        refreshing={false}
       />
     );
   }
@@ -101,9 +142,41 @@ const styles = StyleSheet.create({
     marginTop: 20,
     flex: 1,
   },
+  subtitleView: {
+    flexDirection: 'column'
+  },
+  badgesRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-start'
+  },
+  separator: {
+    height: 1,
+    width: '92%',
+    marginLeft: '4%',
+    backgroundColor: '#CED0CE',
+    borderRadius: 1
+  },
+  avatar: {
+    width: '20%',
+    aspectRatio: 1,
+    borderRadius: 10,
+    //width: 65,
+    //height: 65
+  },
+  distanceText: {
+    color: '#565656'
+  },
   row: {
     padding: 15,
     marginBottom: 5,
     backgroundColor: 'skyblue',
+  },
+  badge: {
+    width: 20, 
+    height: 20,
+    marginLeft: 2,
+    marginRight: 2,
+    marginTop: 7,
+    marginBottom: 7
   },
 })
