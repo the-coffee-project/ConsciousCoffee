@@ -1,0 +1,49 @@
+{
+  "badges": {
+    "names": [
+      "Direct Trade",
+      "Fair Trade",
+      "Organic",
+      "Rainforest Alliance",
+      "Bird Friendly",
+      "Shade Grown",
+      "Single Origin"
+    ],
+    "nameIDs": [
+      "directTrade",
+      "fairTrade",
+      "organic",
+      "rainforestAlliance",
+      "birdFriendly",
+      "shadeGrown",
+      "singleOrigin"
+    ],
+    "keys": {
+      "directTrade": 0,
+      "fairTrade": 1,
+      "organic": 2,
+      "rainforestAlliance": 3,
+      "birdFriendly": 4,
+      "shadeGrown": 5,
+      "singleOrigin": 6
+    },
+    "logos": [
+      "res/PNG/directTradeBadge.png",
+      "res/PNG/fairTradeBadge.png",
+      "res/PNG/organicBadge.png",
+      "res/PNG/rainforestAllianceBadge.png",
+      "res/PNG/birdFriendlyBadge.png",
+      "res/PNG/shadeGrownBadge.png",
+      "res/PNG/singleOriginBadge.png"
+    ],
+    "logos-inv": [
+      "res/PNG/directTradeBadge-inv.png",
+      "res/PNG/fairTradeBadge-inv.png",
+      "res/PNG/organicBadge-inv.png",
+      "res/PNG/rainforestAllianceBadge-inv.png",
+      "res/PNG/birdFriendlyBadge-inv.png",
+      "res/PNG/shadeGrownBadge-inv.png",
+      "res/PNG/singleOriginBadge-inv.png"
+    ]
+  }
+}

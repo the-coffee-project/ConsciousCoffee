@@ -2,11 +2,12 @@ import React, {Component} from 'react';
 import {Image, View, Text, FlatList, StyleSheet} from 'react-native';
 import {List, ListItem} from 'react-native-elements';
 import {BadgeImages} from 'res/Images.js';
+import {LibStyles} from 'library/styles.js';
 
 import customData from 'res/cafe-data.json';
-import { Separator } from 'native-base';
+import customBadgeData from 'res/badge-data.json';
 const data = customData.cafes;
-const badgeData = customData.badges;
+const badgeData = customBadgeData.badges;
 
 const extractKey = ({id}) => id.toString();
 
@@ -28,14 +29,15 @@ export default class CafeListScreen extends Component {
   updateCafeDistances(position) {
     for (i = 0; i < this.state.cafes.length; i++) {
       let item = this.state.cafes[i];
-      let distanceText = "";
       let distance = 0.0;
       distance = this.calcDistance(position.coords.latitude, position.coords.longitude, item.latitude, item.longitude);
       distance = distance * 0.000621371; // Convert from meters to miles
       distance = Math.round(distance * 10) / 10; // Round to 1st decimal place
       item.distanceText = distance.toString() + " mi";
+      item.distance = distance
     }
     let items = [...this.state.cafes];
+    items.sort((a, b) => (a.distance - b.distance));
     for(let i in items) {
       items[i] = Object.assign({}, items[i]);
     }
@@ -84,7 +86,7 @@ export default class CafeListScreen extends Component {
     let items = [];
     for (let i = 0; i < badges.length; i++) {
       if (badges[i] == 1) {
-        uri = badgeData.names[i] + "Badge.png";
+        uri = badgeData.nameIDs[i] + "Badge.png";
         items.push({
           key: i,
           name: badgeData.names[i],
@@ -93,8 +95,11 @@ export default class CafeListScreen extends Component {
       }
     }
     let badgeImageArr = items.map((badge) => (
-      <Image style={styles.badge} key={badge.key} source={BadgeImages[badge.logoURI]} />
+      <Image style={[LibStyles.badge, styles.badge]} key={badge.key} source={BadgeImages[badge.logoURI]} />
     ));
+    if (badgeImageArr.length > 0) {
+      badgeImageArr[0].props.style = styles.firstBadge;
+    }
     return badgeImageArr;
   }
 
@@ -115,8 +120,9 @@ export default class CafeListScreen extends Component {
             <Text style={styles.distanceText}>{item.distanceText}</Text>
           </View>
         }
-        rightAvatar={<Image style={styles.avatar} source={BadgeImages['fairTradeBadge.png']} />}
+        rightAvatar={<Image style={LibStyles.avatar} source={BadgeImages[item.nameID]} />}
         onPress={() => {this.props.navigation.push('Details', item)}}
+        chevronColor="#565656"
         chevron
       />
     );
@@ -139,7 +145,6 @@ export default class CafeListScreen extends Component {
 
 const styles = StyleSheet.create({
   list: {
-    marginTop: 20,
     flex: 1,
   },
   subtitleView: {
@@ -156,13 +161,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#CED0CE',
     borderRadius: 1
   },
-  avatar: {
-    width: '20%',
-    aspectRatio: 1,
-    borderRadius: 10,
-    //width: 65,
-    //height: 65
-  },
   distanceText: {
     color: '#565656'
   },
@@ -172,9 +170,15 @@ const styles = StyleSheet.create({
     backgroundColor: 'skyblue',
   },
   badge: {
+    marginLeft: 2,
+    marginRight: 2,
+    marginTop: 7,
+    marginBottom: 7
+  },
+  firstBadge: {
     width: 20, 
     height: 20,
-    marginLeft: 2,
+    marginLeft: 0,
     marginRight: 2,
     marginTop: 7,
     marginBottom: 7

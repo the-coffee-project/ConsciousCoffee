@@ -1,99 +1,704 @@
 {
-  "badges": {
-    "names": [
-      "directTrade",
-      "fairTrade",
-      "organic",
-      "rainforestAlliance",
-      "birdFriendly",
-      "shadeGrown",
-      "singleOrigin"
-    ],
-    "keys": {
-      "directTrade": 0,
-      "fairTrade": 1,
-      "organic": 2,
-      "rainforestAlliance": 3,
-      "birdFriendly": 4,
-      "shadeGrown": 5,
-      "singleOrigin": 6
-    },
-    "logos": [
-      "res/PNG/directTradeBadge.png",
-      "res/PNG/fairTradeBadge.png",
-      "res/PNG/organicBadge.png",
-      "res/PNG/rainforestAllianceBadge.png",
-      "res/PNG/birdFriendlyBadge.png",
-      "res/PNG/shadeGrownBadge.png",
-      "res/PNG/singleOriginBadge.png"
-    ],
-    "logos-inv": [
-      "res/PNG/directTradeBadge-inv.png",
-      "res/PNG/fairTradeBadge-inv.png",
-      "res/PNG/organicBadge-inv.png",
-      "res/PNG/rainforestAllianceBadge-inv.png",
-      "res/PNG/birdFriendlyBadge-inv.png",
-      "res/PNG/shadeGrownBadge-inv.png",
-      "res/PNG/singleOriginBadge-inv.png"
-    ]
-  },
   "cafes": [
     {
-      "id": 0,
-      "name": "",
-      "hours": "",
-      "address": "",
+      "id": 1,
+      "name": "Abe's Cafe",
+      "nameID": "AbesCafe",
+      "hours": [
+        "7:30am - 5pm",
+        "7:30am - 5pm",
+        "7:30am - 5pm",
+        "7:30am - 5pm",
+        "7:30am - 5pm",
+        "Closed",
+        "Closed"
+      ],
+      "address": "1842 Euclid Ave, Berkeley, CA 94709",
       "badges": [
+        1,
+        1,
+        1,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
         0
       ],
-      "tradeDescription": "",
-      "cafeDescription": "",
-      "latitude": 0,
-      "longitude": 0
-    },
-    {
-      "id": 1,
-      "name": "Algorithm Coffee Company",
-      "hours": "M: 8am - 3pm\nTu: 8am - 3pm\nW: 8am - 3pm\nTh: 8am - 3pm\nF: 8am - 3pm\nSat: 9am - 5pm\nSun: 9am - 5pm",
-      "address": "1122 University Ave, Berkeley, CA 94702",
-      "badges": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "tradeDescription": "",
-      "cafeDescription": "",
-      "latitude": 37.869165,
-      "longitude": -122.290664
+      "tradeDescription": "Partnered with the McLaughlin Coffee Roasting Company, a local and family-owned business",
+      "cafeDescription": "Cafe carries various beverages such as coffee, tea, and different traditional Hispanic beverage mixes. They also carry light snacks such as sandwiches and smaller breakfast items. This cafe is close to the northside of campus and is also surrounded by a number of other restaurants which attract many Berkeley students. The trendy ambiance and friendly staff make this a great place to grab a bite to eat or study!",
+      "latitude": 37.875518,
+      "longitude": -122.260418
     },
     {
       "id": 2,
-      "name": "Babette (BAMFA)",
-      "hours": "M: Closed\nT: Closed\nW: 9am - 7pm\nTh 9am - 7pm\nF: 9am - 7pm\nSat: 11am - 7pm\nSun: 11am - 7pm",
+      "name": "Algorithm Coffee Company",
+      "nameID": "AlgorithmCoffeeCo",
+      "hours": [
+        "8am - 3pm",
+        "8am - 3pm",
+        "8am - 3pm",
+        "8am - 3pm",
+        "8am - 3pm",
+        "9am - 5pm",
+        "9am - 5pm"
+      ],
+      "address": "1122 University Ave, Berkeley, CA 94702",
+      "badges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "tradeDescription": "Algorithm sources small lot, single origin coffees in an environmentally and socially conscious manner. They work with farmers worldwide to foster a passion for the craft and ensure high quality.",
+      "cafeDescription": "Algorithm is a great place to enjoy your coffee while you're doing work. Their dark-colored walls and well-lit lamps provide a very modern aesthetic environment. The staff are extremely educated about their coffees and are very patient with newcomers.  There are lots of tables and outlets spread around the coffee shop so it's perfect for studying or chatting with friends.",
+      "latitude": 37.869160,
+      "longitude": -122.290662
+    },
+    {
+      "id": 3,
+      "name": "Babette (BAMPFA)",
+      "nameID": "BabetteBampfa",
+      "hours": [
+        "Closed",
+        "Closed",
+        "9am - 7pm",
+        "9am - 7pm",
+        "9am - 7pm",
+        "11am - 7pm",
+        "11am - 7pm"
+      ],
       "address": "2120 Oxford St, Berkeley, CA 94720",
       "badges": [
         1,
         0,
+        0,
         1,
         0,
         0,
-        1,
         0
       ],
-      "tradeDescription": "",
+      "tradeDescription": "Babette Cafe locally sources their coffee and espresso from Alchemy Collective Coffee, AKA, Proyecto Diaz, Ritual, and Ruby's Roast Coffee",
+      "cafeDescription": "Located on the upstairs level of BAMFA on Center St and Oxford St, Babette offers a great atmosphere for everything from socializing with friends to studying for an upcoming exam. With an abundance of natural light, kind staff, and vibrant red walls, there are plenty of tables available for everyone at this cafe. One thing to keep in mind is that there are a limited number of outlets available, all of which are located in a room at the back of the cafe.",
+      "latitude": 37.870975,
+      "longitude": -122.266131
+    },
+    {
+      "id": 4,
+      "name": "Babette South Hall Coffee Bar",
+      "nameID": "BabetteSouthHall",
+      "hours": [
+        "9am - 3pm",
+        "9am - 3pm",
+        "9am - 3pm",
+        "9am - 3pm",
+        "9am - 3pm",
+        "Closed",
+        "Closed"
+      ],
+      "address": "South Hall, Berkeley, CA 94704",
+      "badges": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Babette South Hall Coffee Bar locally sources their coffee and espresso from Alchemy Collective Coffee, AKA, Proyecto Diaz, Ritual, and Ruby's Roast Coffee",
+      "cafeDescription": "Located inside of South Hall, UC Berkeley's oldest building, Babette offers a great place for a morning drink and fresh pastry or a quick stop to rest or even get some work done while accompanied by the fresh aroma of coffee. There are a few tables with chairs, most with convenient outlets nearby, but depending on the time you may not find a free spot. There is natural lighting that illuminates the hallway with tables.  Restrooms are located around the corner inside the building.",
+      "latitude": 37.871327,
+      "longitude": -122.258576
+    },
+    {
+      "id": 5,
+      "name": "Brewed Awakening",
+      "nameID": "BrewedAwakening",
+      "hours": [
+        "7am - 7pm",
+        "7am - 7pm",
+        "7am - 7pm",
+        "7am - 7pm",
+        "7am - 7pm",
+        "8am - 6pm",
+        "8am - 6pm"
+      ],
+      "address": "1807 Euclid Ave, Berkeley, CA 94709",
+      "badges": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Organic and fair trade",
+      "cafeDescription": "Brewed Awakening has been a part of Berkeley for over 30 years. This shop offers vegan and wheat-less baked goods from fresh wraps to mini crustless quiches to sticky toffee pudding.  Treat yourself at this family owned coffeehouse. There is always something to try!",
+      "latitude": 37.875768,
+      "longitude": -122.260180
+    },
+    {
+      "id": 6,
+      "name": "Cal Dining - Bear Market",
+      "nameID": "BearMarket",
+      "hours": [
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am"
+      ],
+      "address": "2400 Durant Ave, Berkeley, CA 94704",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "Bear Market, situated right next to Cafe 3, is stocked with everything a college student's snack cravings would call for, from chips and hummus to fruits and nuts and even fair trade chocolate!",
+      "latitude": 37.867114,
+      "longitude": -122.260338
+    },
+    {
+      "id": 7,
+      "name": "Cal Dining - Cafe 3",
+      "nameID": "Cafe3",
+      "hours": [
+        "7am - 9:30am, 11am - 2pm. 5pm - 8:30pm",
+        "7am - 9:30am, 11am - 2pm, 5pm - 8:30pm ",
+        "7am - 9:30am, 11am - 2pm, 5pm - 8:30pm",
+        "7am - 9:30am, 11am - 2pm, 5pm - 8:30pm",
+        "7am - 9:30am, 11am - 2pm, 5pm - 8:30pm",
+        "10:30am - 2:30pm, 5pm - 8:30pm",
+        "10:30am - 2:30pm, 5pm - 8:30pm"
+      ],
+      "address": "2400 Durant Ave, Berkeley, CA 94704",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "Cafe 3 is the designated dining hall of the Unit 3 and Blackwell Residence Halls.",
+      "latitude": 37.867165,
+      "longitude": -122.260374
+    },
+    {
+      "id": 8,
+      "name": "Cal Dining - CKC Dining",
+      "nameID": "CKCDining",
+      "hours": [
+        "7am - 9:30am, 5pm - 8:30pm",
+        "7am - 9:30am, 5pm - 8:30pm ",
+        "7am - 9:30am, 5pm - 8:30pm",
+        "7am - 9:30am, 5pm - 8:30pm",
+        "7am - 9:30am, 5pm - 8:30pm",
+        "10:30am - 2:30pm, 5pm - 8:30pm",
+        "10:30am - 2:30pm, 5pm - 8:30pm"
+      ],
+      "address": "2601 Warring St, Berkeley, CA 94720",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "Clark Kerr Campus Dining Hall is located on the Clark Kerr Residence Campus, and although more out of the way, students will often find CKC Dining to be less crowded.",
+      "latitude": 37.864094,
+      "longitude": -122.248042
+    },
+    {
+      "id": 9,
+      "name": "Cal Dining - CKCub",
+      "nameID": "CKCub",
+      "hours": [
+        "7am - 9:30am, 5pm - 8:30pm",
+        "7am - 9:30am, 5pm - 8:30pm ",
+        "7am - 9:30am, 5pm - 8:30pm",
+        "7am - 9:30am, 5pm - 8:30pm",
+        "7am - 9:30am, 5pm - 8:30pm",
+        "10:30am - 2:30pm, 5pm - 8:30pm",
+        "10:30am - 2:30pm, 5pm - 8:30pm"
+      ],
+      "address": "2601 Warring St, Berkeley, CA 94720",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "Located inside the Clark Kerr Campus Dining Hall, students will find CKCub - a small convenience store for students to buy snacks and bottled drinks.",
+      "latitude": 37.864208,
+      "longitude": -122.248878
+    },
+    {
+      "id": 10,
+      "name": "Cal Dining - Coffee Cart RSF",
+      "nameID": "CoffeeCartRSF",
+      "hours": [
+        "7:30am - 3pm",
+        "7:30am - 3pm",
+        "7:30am - 3pm",
+        "7:30am - 3pm",
+        "7:30am - 3pm",
+        "Closed",
+        "Closed"
+      ],
+      "address": "2301 Bancroft Way, Berkeley, CA 94720",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
       "cafeDescription": "",
-      "latitude": 37.870637,
-      "longitude": -122.266446
+      "latitude": 37.868474,
+      "longitude": -122.262529
+    },
+    {
+      "id": 11,
+      "name": "Cal Dining - Common Grounds",
+      "nameID": "CommonGrounds",
+      "hours": [
+        "7:30am - 3pm",
+        "7:30am - 3pm",
+        "7:30am - 3pm",
+        "7:30am - 3pm",
+        "7:30am - 3pm",
+        "Closed",
+        "Closed"
+      ],
+      "address": "Dwinelle Hall, Level F, Berkeley, CA 94720",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "Located on the top floor of Dwinelle, this cafe offers a variety of Peet's Coffee drinks, sandwiches, snacks, and bottled drinks. With its cozy size and peaceful atmosphere, Common Grounds is a great place to get work done.",
+      "latitude": 37.870591,
+      "longitude": -122.260460
+    },
+    {
+      "id": 12,
+      "name": "Cal Dining - Crossroads",
+      "nameID": "Crossroads",
+      "hours": [
+        "7am - 9:30am, 11am - 5pm, 5pm - 8:30pm",
+        "7am - 9:30am, 11am - 5pm, 5pm - 8:30pm, 10pm - 1:30am",
+        "7am - 9:30am, 11am - 2pm, 5pm - 8:30pm, 10pm - 1:30am",
+        "7am - 9:30am, 11am - 5pm, 5pm - 8:30pm, 10pm - 1:30am",
+        "7am - 9:30am, 11am - 5pm, 5pm - 8:30pm, 10pm - 1:30am",
+        "10:30am - 2:30pm, 5pm - 8:30pm, 10pm - 1:30am",
+        "10:30am - 2:30pm, 5pm - 8:30pm"
+      ],
+      "address": "2415 Bowditch St, Berkeley, CA 94720",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "Crossroads is the designated Dining Hall of the Unit 1 and Unit 2 Residence Halls.",
+      "latitude": 37.867052,
+      "longitude": -122.256214
+    },
+    {
+      "id": 13,
+      "name": "Cal Dining - Foothill",
+      "nameID": "Foothill",
+      "hours": [
+        "7am - 9:30am, 11am - 2pm, 5pm - 8:30pm, 10pm - 1:30am",
+        "7am - 9:30am, 11am - 2pm, 5pm - 8:30pm",
+        "7am - 9:30am, 11am - 2pm, 5pm - 8:30pm",
+        "7am - 9:30am, 11am - 2pm, 5pm - 8:30pm, 10pm - 1:30am",
+        "7am - 9:30am, 11am - 2pm, 5pm - 8:30pm, 10pm - 1:30am",
+        "10:30am - 2:30pm, 5pm - 8:30pm, 10pm - 1:30am",
+        "10:30am - 2:30pm, 5pm - 8:30pm, 10pm - 1:30am"
+      ],
+      "address": "2700 Hearst Ave, Berkeley, CA 94720",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "Foothill Dining Hall is the designated dining hall of Stern and Foothill residences.",
+      "latitude": 37.875376,
+      "longitude": -122.256119
+    },
+    {
+      "id": 14,
+      "name": "Cal Dining - Foothill Cub Market",
+      "nameID": "FoothillCubMarket",
+      "hours": [
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am"
+      ],
+      "address": "2700 Hearst Ave, Berkeley, CA 94720",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "Foothill Cub Market is located within the Foothill Dining Hall and is a convenient place for students to pick up bottled drinks and snacks.",
+      "latitude": 37.875335,
+      "longitude": -122.256041
+    },
+    {
+      "id": 15,
+      "name": "Cal Dining - Golden Bear CafÈ (GBC)",
+      "nameID": "GoldenBearCafe",
+      "hours": [
+        "7:30am - 8pm",
+        "7:30am - 8pm",
+        "7:30am - 8pm",
+        "7:30am - 8pm",
+        "7:30am - 6pm",
+        "11am - 6pm",
+        "Closed"
+      ],
+      "address": "Cesar Chavez Student Center, Upper Sproul Plaza, Berkeley, CA 94701",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "The Golden Bear Cafe is a convenience store located on Sproul Plaza where students can pick up snacks before class, purchase a grab and go lunch, or sit outside on the patio tables. Order off of the full Peet's Coffee menu, grab a bakery good or some California Rolls, or pick up a smoothie at the center of campus!",
+      "latitude": 37.869838,
+      "longitude": -122.259644
+    },
+    {
+      "id": 16,
+      "name": "Cal Dining - Haas Pavilion Concession Stands",
+      "nameID": "HaasPavilion",
+      "hours": [
+        "SPECIAL EVENTS HOURS",
+        "SPECIAL EVENTS HOURS",
+        "SPECIAL EVENTS HOURS",
+        "SPECIAL EVENTS HOURS",
+        "SPECIAL EVENTS HOURS",
+        "SPECIAL EVENTS HOURS",
+        "SPECIAL EVENTS HOURS"
+      ],
+      "address": "115 Haas Pavilion, Berkeley, CA 94720",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "",
+      "latitude": 37.869385,
+      "longitude": -122.262309
+    },
+    {
+      "id": 17,
+      "name": "Cal Dining - Memorial Stadium Concession Stands",
+      "nameID": "MemorialStadium",
+      "hours": [
+        "SPECIAL EVENTS HOURS",
+        "SPECIAL EVENTS HOURS",
+        "SPECIAL EVENTS HOURS",
+        "SPECIAL EVENTS HOURS",
+        "SPECIAL EVENTS HOURS",
+        "SPECIAL EVENTS HOURS",
+        "SPECIAL EVENTS HOURS"
+      ],
+      "address": "2227 Piedmont Ave, Berkeley, CA ",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "",
+      "latitude": 37.870377,
+      "longitude": -122.251337
+    },
+    {
+      "id": 18,
+      "name": "Cal Dining - Pat Brown's ",
+      "nameID": "PatBrowns",
+      "hours": [
+        "7:30am - 5:30pm",
+        "7:30am - 5:30pm",
+        "7:30am - 5:30pm",
+        "7:30am - 5:30pm",
+        "7:30am - 4pm",
+        "Closed",
+        "Closed"
+      ],
+      "address": "2255 Hearst Ave, Berkeley, CA 94709",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "Located next to Li Ka Shing, Pat Brown's offers a wide variety of breakfast and lunch items from paninis to breakfast platters to congee bowls and much more! Order off of a full Peet's Coffee menu or grab a fruit cup on your way to class at this little hub at the corner of campus!",
+      "latitude": 37.873325,
+      "longitude": -122.264887
+    },
+    {
+      "id": 19,
+      "name": "Cal Dining - Terrace CafÈ",
+      "nameID": "TerraceCafe",
+      "hours": [
+        "7:30am - 3pm",
+        "7:30am - 3pm",
+        "7:30am - 3pm",
+        "7:30am - 3pm",
+        "7:30am - 3pm",
+        "Closed",
+        "Closed"
+      ],
+      "address": "Bechtel Engineering Center, Berkeley, CA 94709",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "Terrace Cafe is tucked away from all the hustle and bustle.  Lounge around outside on a deck on top of the Betchel Engineering Center and enjoy a quick snack or some California Rolls away from the constant stream of students rushing to class.",
+      "latitude": 37.874132,
+      "longitude": -122.258387
+    },
+    {
+      "id": 20,
+      "name": "Cal Dining - The Den",
+      "nameID": "TheDen",
+      "hours": [
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am",
+        "7:30am - 12am"
+      ],
+      "address": "2415 Bowditch St, Berkeley, CA 94720",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "The Den is a grab and go style shop. Though small, they have a wide variety of snacks, bottled and canned drinks, smoothies, Peet's Coffee products, and much more! Although there is limited seating space on the inside, there is a patio area outside for students to chat and study at this extremely convenient pit stop located right next to Crossroads Dining Hall.",
+      "latitude": 37.866905,
+      "longitude": -122.256176
+    },
+    {
+      "id": 21,
+      "name": "Cal Dining - The Pro Shop (RSF)",
+      "nameID": "TheProShop",
+      "hours": [
+        "7:30am - 10:30pm",
+        "7:30am - 10:30pm",
+        "7:30am - 10:30pm",
+        "7:30am - 10:30pm",
+        "7:30am - 10:30pm",
+        "9am - 8pm",
+        "9am - 8pm"
+      ],
+      "address": "2301 Bancroft Way, Berkeley, CA 94720",
+      "badges": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Partnered with Peet's Coffee",
+      "cafeDescription": "The Pro Shop is a grab and go style shop convenient for athletes and students. Though small, they have a wide variety of snacks, bottled and canned drinks, smoothies, Peet's Coffee products, and much more! There is limited seating inside.  It is a great post workout spot to rest.",
+      "latitude": 37.868593,
+      "longitude": -122.262476
+    },
+    {
+      "id": 22,
+      "name": "Gold Leaf Cafe",
+      "nameID": "GoldLeafCafe",
+      "hours": [
+        "7am - 4pm",
+        "7am - 4pm",
+        "7am - 4pm",
+        "7am - 4pm",
+        "7am - 4pm",
+        "8am - 4pm",
+        "8am - 4pm"
+      ],
+      "address": "1947 Martin Luther King Jr Way, Berkeley, CA 94704",
+      "badges": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "tradeDescription": "Counter Culture Direct Trade: A 3rd Party verified direct trade model that focuses on relationships with farmers or co-operatives and the quality of the coffee",
+      "cafeDescription": "Located right off of Martin Luther King Jr Way and University Ave, Gold Leaf Cafe is the perfect place to relax and enjoy a cup of coffee. The cafe's cozy size provides a great setting for socializing with friends or enjoying a good read. All of their coffee products come from Counter Culture Coffee, a proud partner of the Coffee Project. One thing to keep in mind is that this cafe doesn't offer wifi, so get your personal hotspots ready!",
+      "latitude": 37.871924,
+      "longitude": -122.272856
+    },
+    {
+      "id": 23,
+      "name": "Northside Cafe",
+      "nameID": "NorthsideCafe",
+      "hours": [
+        "7:30am - 7pm",
+        "7:30am - 7pm",
+        "7:30am - 7pm",
+        "7:30am - 7pm",
+        "7:30am - 7pm",
+        "9am - 5pm",
+        "9am - 5pm"
+      ],
+      "address": "1878 Euclid Ave, Berkeley, CA 94709",
+      "badges": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "They use fair trade, organic, and locally sourced espresso and coffee",
+      "cafeDescription": "Northside Cafe not only carries coffee products but also a selection of sandwiches, soups, and breakfast items. It is located at the corner of campus and is an ideal stop for brunch or a quick caffeine stop. Students often study in Northside Cafe - it is a perfect place for short meetings with ample space and seating.",
+      "latitude": 37.875191,
+      "longitude": -122.260337
+    },
+    {
+      "id": 24,
+      "name": "People's Cafe",
+      "nameID": "PeoplesCafe",
+      "hours": [
+        "7am - 6pm",
+        "7am - 6pm",
+        "7am - 6pm",
+        "7am - 6pm",
+        "7am - 6pm",
+        "7am - 6pm",
+        "7am - 6pm"
+      ],
+      "address": "61 Shattuck Square, Berkeley, CA 94704",
+      "badges": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "America's Best Coffee - based in Oakland, has three official ethical sourcing labels",
+      "cafeDescription": "Peopleís Cafe stresses the importance of an affordable coffee cup for the people ó students, workers, parents, and all others. With student friendly prices and vegan options, the cozy coffee shop is a perfect spot to catch up with a friend or to study. The natural light and simple, yet open layout of the cafe invites all people of the community.",
+      "latitude": 37.871692,
+      "longitude": -122.267888
+    },
+    {
+      "id": 25,
+      "name": "Victory Point Cafe",
+      "nameID": "VictoryPointCafe",
+      "hours": [
+        "8am - 11pm",
+        "8am - 11pm",
+        "8am - 11pm",
+        "8am - 11pm",
+        "8am - 12am",
+        "10am - 12am",
+        "10am - 11pm"
+      ],
+      "address": "1797-A, Shattuck Ave, Berkeley, CA 94709",
+      "badges": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tradeDescription": "Victory Point Cafe uses Barefoot Roaster which is direct trade and Bhakti Chai which is fair trade",
+      "cafeDescription": "Victory Point Cafe is a hidden gem with exceptionally friendly staff and plenty of space for students to hang out or study. They call themselves \"The Board Game Cafe\" and keep hundreds of games on hand for anyone to come in and play for a nominal cost. Come in and stay awhile for a game night with friends while munching on some of the shareable snack bowls Victory Point offers, along with pizza, garlic bread, and even gelato!",
+      "latitude": 37.875357,
+      "longitude": -122.268598
     }
   ]
 }
