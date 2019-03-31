@@ -24,7 +24,7 @@
         0
       ],
       "tradeDescription": "Partnered with the McLaughlin Coffee Roasting Company, a local and family-owned business",
-      "cafeDescription": "Cafe carries various beverages such as coffee, tea, and different traditional Hispanic beverage mixes. They also carry light snacks such as sandwiches and smaller breakfast items. This cafe is close to the northside of campus and is also surrounded by a number of other restaurants which attract many Berkeley students. The trendy ambiance and friendly staff make this a great place to grab a bite to eat or study!",
+      "cafeDescription": "Abe's Cafe carries various beverages such as coffee, tea, and different traditional Hispanic beverage mixes. They also carry light snacks such as sandwiches and smaller breakfast items. This cafe is close to the northside of campus and is also surrounded by a number of other restaurants which attract many Berkeley students. The trendy ambiance and friendly staff make this a great place to grab a bite to eat or study!",
       "latitude": 37.875518,
       "longitude": -122.260418
     },
@@ -80,7 +80,7 @@
         0
       ],
       "tradeDescription": "Babette Cafe locally sources their coffee and espresso from Alchemy Collective Coffee, AKA, Proyecto Diaz, Ritual, and Ruby's Roast Coffee",
-      "cafeDescription": "Located on the upstairs level of BAMFA on Center St and Oxford St, Babette offers a great atmosphere for everything from socializing with friends to studying for an upcoming exam. With an abundance of natural light, kind staff, and vibrant red walls, there are plenty of tables available for everyone at this cafe. One thing to keep in mind is that there are a limited number of outlets available, all of which are located in a room at the back of the cafe.",
+      "cafeDescription": "Located on the upstairs level of BAMPFA on Center St and Oxford St, Babette offers a great atmosphere for everything from socializing with friends to studying for an upcoming exam. With an abundance of natural light, kind staff, and vibrant red walls, there are plenty of tables available for everyone at this cafe. One thing to keep in mind is that there are a limited number of outlets available, all of which are located in a room at the back of the cafe.",
       "latitude": 37.870975,
       "longitude": -122.266131
     },
@@ -135,8 +135,8 @@
         0,
         0
       ],
-      "tradeDescription": "Organic and fair trade",
-      "cafeDescription": "Brewed Awakening has been a part of Berkeley for over 30 years. This shop offers vegan and wheat-less baked goods from fresh wraps to mini crustless quiches to sticky toffee pudding.  Treat yourself at this family owned coffeehouse. There is always something to try!",
+      "tradeDescription": "They use Organic and Fair Trade Certified coffee",
+      "cafeDescription": "Brewed Awakening has been a part of Berkeley for over 30 years. This shop offers vegan and wheat-less baked goods from fresh wraps to mini crustless quiches to sticky toffee pudding. Treat yourself at this family owned coffeehouse. There is always something to try!",
       "latitude": 37.875768,
       "longitude": -122.260180
     },
@@ -276,7 +276,7 @@
         0
       ],
       "tradeDescription": "Partnered with Peet's Coffee",
-      "cafeDescription": "",
+      "cafeDescription": "A nice quick Peet's Coffee coffee cart located right outside the entrance to the RSF for your pre or post workout needs.",
       "latitude": 37.868474,
       "longitude": -122.262529
     },
@@ -360,7 +360,7 @@
         0
       ],
       "tradeDescription": "Partnered with Peet's Coffee",
-      "cafeDescription": "Foothill Dining Hall is the designated dining hall of Stern and Foothill residences.",
+      "cafeDescription": "Foothill Dining Hall is the designated dining hall of the Stern and Foothill residences.",
       "latitude": 37.875376,
       "longitude": -122.256119
     },
@@ -394,7 +394,7 @@
     },
     {
       "id": 15,
-      "name": "Cal Dining - Golden Bear CafÈ (GBC)",
+      "name": "Cal Dining - Golden Bear Cafe (GBC)",
       "nameID": "GoldenBearCafe",
       "hours": [
         "7:30am - 8pm",
@@ -416,7 +416,7 @@
         0
       ],
       "tradeDescription": "Partnered with Peet's Coffee",
-      "cafeDescription": "The Golden Bear Cafe is a convenience store located on Sproul Plaza where students can pick up snacks before class, purchase a grab and go lunch, or sit outside on the patio tables. Order off of the full Peet's Coffee menu, grab a bakery good or some California Rolls, or pick up a smoothie at the center of campus!",
+      "cafeDescription": "The Golden Bear Cafe is a convenience store located on Sproul Plaza where students can pick up snacks before class, purchase a grab and go lunch, or sit outside on the patio tables. Order off of the full Peet's Coffee menu, grab a baked good or some California Rolls, or pick up a smoothie at the center of campus!",
       "latitude": 37.869838,
       "longitude": -122.259644
     },
@@ -444,7 +444,7 @@
         0
       ],
       "tradeDescription": "Partnered with Peet's Coffee",
-      "cafeDescription": "",
+      "cafeDescription": "Consession stands for mid-game and event snacks and drinks.",
       "latitude": 37.869385,
       "longitude": -122.262309
     },
@@ -472,7 +472,7 @@
         0
       ],
       "tradeDescription": "Partnered with Peet's Coffee",
-      "cafeDescription": "",
+      "cafeDescription": "Consession stands for mid-game snacks and drinks.",
       "latitude": 37.870377,
       "longitude": -122.251337
     },
@@ -506,7 +506,7 @@
     },
     {
       "id": 19,
-      "name": "Cal Dining - Terrace CafÈ",
+      "name": "Cal Dining - Terrace Cafe",
       "nameID": "TerraceCafe",
       "hours": [
         "7:30am - 3pm",
@@ -640,7 +640,7 @@
         0
       ],
       "tradeDescription": "They use fair trade, organic, and locally sourced espresso and coffee",
-      "cafeDescription": "Northside Cafe not only carries coffee products but also a selection of sandwiches, soups, and breakfast items. It is located at the corner of campus and is an ideal stop for brunch or a quick caffeine stop. Students often study in Northside Cafe - it is a perfect place for short meetings with ample space and seating.",
+      "cafeDescription": "Northside Cafe not only carries coffee products, but also a selection of sandwiches, soups, and breakfast items. It is located at the corner of campus and is an ideal stop for brunch or a quick caffeine stop. Students often study in Northside Cafe - it is a perfect place for short meetings with ample space and seating.",
       "latitude": 37.875191,
       "longitude": -122.260337
     },
@@ -668,7 +668,7 @@
         0
       ],
       "tradeDescription": "America's Best Coffee - based in Oakland, has three official ethical sourcing labels",
-      "cafeDescription": "Peopleís Cafe stresses the importance of an affordable coffee cup for the people ó students, workers, parents, and all others. With student friendly prices and vegan options, the cozy coffee shop is a perfect spot to catch up with a friend or to study. The natural light and simple, yet open layout of the cafe invites all people of the community.",
+      "cafeDescription": "People's Cafe stresses the importance of an affordable coffee cup for the people--students, workers, parents, and all others. With student friendly prices and vegan options, the cozy coffee shop is a perfect spot to catch up with a friend or to study. The natural light and simple, yet open layout of the cafe invites all people of the community.",
       "latitude": 37.871692,
       "longitude": -122.267888
     },

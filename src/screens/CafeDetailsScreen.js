@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 import {Image, View, Text, StyleSheet, FlatList} from 'react-native';
 import {BadgeImages} from 'res/Images.js';
 import {ListItem} from 'react-native-elements';
-import { ScrollView } from 'react-native-gesture-handler';
+import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import {LibStyles} from 'library/styles.js';
+import { showLocation } from 'react-native-map-link'
 
 import customBadgeData from 'res/badge-data.json';
 const badgeData = customBadgeData.badges;
@@ -36,6 +37,15 @@ export default class CafeDetailsScreen extends Component {
     );
   }
 
+  linkToMaps(address, name, latitude, longitude) {
+    showLocation({
+      latitude: latitude,
+      longitude: longitude,
+      title: name,  // optional
+      googleForceLatLon: true,  // optionally force GoogleMaps to use the latlon for the query instead of the title
+    })
+  }
+
   render() {
     const navigation = this.props.navigation;
     let cafe = {
@@ -54,28 +64,36 @@ export default class CafeDetailsScreen extends Component {
 
     return (
       <ScrollView style={styles.scrollContainer}>
-        <View style={styles.titleContainer}>
+        <View style={[styles.titleContainer, styles.paddingContainer]}>
           <Image style={[LibStyles.avatar, styles.avatar]} source={BadgeImages[cafe.nameID]} />
           <Text style={[LibStyles.title, styles.title]}>{cafe.name}</Text>
         </View>
-        <Text style={styles.cafeDescription}>{cafe.cafeDescription}</Text>
-        <FlatList
-          style={styles.badgeList}
-          data={badges}
-          keyExtractor={extractKey}
-          renderItem={this.renderBadgeListItem}
-          scrollEnabled={false}
+        <ListItem 
+          style={[styles.addressContainer, styles.paddingContainer]}
+          component={TouchableOpacity}
+          underlayColor={"transparent"}
+          activeOpacity={0.6}
+          containerStyle={styles.addressContainer}
+          title={<Text style={styles.address}>{cafe.address}</Text>}
+          onPress={() => this.linkToMaps(cafe.address, cafe.name, cafe.latitude, cafe.longitude)}
+          chevron
         />
-        <Text style={[styles.cafeDescription, styles.tradeDescription]}>
-          <Text style={styles.bold}>Trade Description: </Text>
-          {cafe.tradeDescription}
-        </Text>
-        <View style={styles.bottomPadding}></View>
+        <View style={styles.paddingContainer}>
+          <Text style={styles.cafeDescription}>{cafe.cafeDescription}</Text>
+          <FlatList
+            style={styles.badgeList}
+            data={badges}
+            keyExtractor={extractKey}
+            renderItem={this.renderBadgeListItem}
+            scrollEnabled={false}
+          />
+          <Text style={[styles.cafeDescription, styles.tradeDescription]}>
+            <Text style={styles.bold}>Trade Description: </Text>
+            {cafe.tradeDescription}
+          </Text>
+          <View style={styles.bottomPadding}></View>
+        </View>
       </ScrollView>
-      /*<View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: '#F5FCFF' }}>
-        <Text>{cafe.name}</Text>
-        <Image source={BadgeImages['fairTradeBadge.png']} />
-      </View>*/
     );
   }
 }
@@ -83,7 +101,12 @@ export default class CafeDetailsScreen extends Component {
 const styles = StyleSheet.create({
   scrollContainer: {
     flex: 1,
-    padding: '5%',
+    paddingTop: '5%',
+    paddingBottom: '5%',
+  },
+  paddingContainer: {
+    paddingLeft: '5%',
+    paddingRight: '5%',
   },
   titleContainer: {
     width: '90%',
@@ -91,9 +114,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
   },
+  addressContainer: {
+    width: '100%',
+    marginTop: 10,
+    paddingLeft: 2,
+  },
+  address: {
+    marginTop: 0,
+    marginBottom: 0,
+    padding: 0,
+    fontSize: 15,
+    color: '#0191c1',
+  },
   cafeDescription: {
-    marginLeft: 5,
-    marginTop: 40,
+    marginLeft: 0,
+    marginTop: 20,
     fontFamily: 'System',
     fontWeight: '400',
     fontSize: 18,
@@ -117,6 +152,7 @@ const styles = StyleSheet.create({
   },
   badgeList: {
     marginTop: 10,
+    marginLeft: 0,
   },
   badgeListItem: {
     margin: 0,

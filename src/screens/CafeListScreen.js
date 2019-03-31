@@ -135,6 +135,7 @@ export default class CafeListScreen extends Component {
         data={this.state.cafes}
         renderItem={this.renderItem}
         keyExtractor={extractKey}
+        contentContainerStyle={{paddingBottom:25, paddingTop: 5}}
         ItemSeparatorComponent={this.renderSeparator}
         onRefresh={this.loadLocation}
         refreshing={false}
@@ -144,6 +145,12 @@ export default class CafeListScreen extends Component {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  bottomPadding: {
+    paddingBottom: '25%',
+  },
   list: {
     flex: 1,
   },

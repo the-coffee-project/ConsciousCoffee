@@ -74,5 +74,17 @@
 		<string>Roboto.ttf</string>
 		<string>rubicon-icon-font.ttf</string>
 	</array>
+  <key>LSApplicationQueriesSchemes</key>
+  <array>
+    <string>comgooglemaps</string>
+    <string>citymapper</string>
+    <string>uber</string>
+    <string>lyft</string>
+    <string>transit</string>
+    <string>waze</string>
+    <string>yandexnavi</string>
+    <string>moovit</string>
+    <string>yandexmaps</string>
+  </array>
 </dict>
 </plist>
