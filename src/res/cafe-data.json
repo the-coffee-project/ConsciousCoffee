@@ -142,7 +142,7 @@
     },
     {
       "id": 6,
-      "name": "Cal Dining - Bear Market",
+      "name": "Bear Market - Cal Dining",
       "nameID": "BearMarket",
       "hours": [
         "7:30am - 12am",
@@ -170,7 +170,7 @@
     },
     {
       "id": 7,
-      "name": "Cal Dining - Cafe 3",
+      "name": "Cafe 3 - Cal Dining",
       "nameID": "Cafe3",
       "hours": [
         "7am - 9:30am, 11am - 2pm. 5pm - 8:30pm",
@@ -198,7 +198,7 @@
     },
     {
       "id": 8,
-      "name": "Cal Dining - CKC Dining",
+      "name": "CKC Dining - Cal Dining",
       "nameID": "CKCDining",
       "hours": [
         "7am - 9:30am, 5pm - 8:30pm",
@@ -226,7 +226,7 @@
     },
     {
       "id": 9,
-      "name": "Cal Dining - CKCub",
+      "name": "CKCub - Cal Dining",
       "nameID": "CKCub",
       "hours": [
         "7am - 9:30am, 5pm - 8:30pm",
@@ -254,7 +254,7 @@
     },
     {
       "id": 10,
-      "name": "Cal Dining - Coffee Cart RSF",
+      "name": "Coffee Cart RSF - Cal Dining",
       "nameID": "CoffeeCartRSF",
       "hours": [
         "7:30am - 3pm",
@@ -282,7 +282,7 @@
     },
     {
       "id": 11,
-      "name": "Cal Dining - Common Grounds",
+      "name": "Common Grounds - Cal Dining",
       "nameID": "CommonGrounds",
       "hours": [
         "7:30am - 3pm",
@@ -310,7 +310,7 @@
     },
     {
       "id": 12,
-      "name": "Cal Dining - Crossroads",
+      "name": "Crossroads - Cal Dining",
       "nameID": "Crossroads",
       "hours": [
         "7am - 9:30am, 11am - 5pm, 5pm - 8:30pm",
@@ -338,7 +338,7 @@
     },
     {
       "id": 13,
-      "name": "Cal Dining - Foothill",
+      "name": "Foothill - Cal Dining",
       "nameID": "Foothill",
       "hours": [
         "7am - 9:30am, 11am - 2pm, 5pm - 8:30pm, 10pm - 1:30am",
@@ -366,7 +366,7 @@
     },
     {
       "id": 14,
-      "name": "Cal Dining - Foothill Cub Market",
+      "name": "Foothill Cub Market - Cal Dining",
       "nameID": "FoothillCubMarket",
       "hours": [
         "7:30am - 12am",
@@ -394,7 +394,7 @@
     },
     {
       "id": 15,
-      "name": "Cal Dining - Golden Bear Cafe (GBC)",
+      "name": "Golden Bear Cafe (GBC) - Cal Dining",
       "nameID": "GoldenBearCafe",
       "hours": [
         "7:30am - 8pm",
@@ -422,7 +422,7 @@
     },
     {
       "id": 16,
-      "name": "Cal Dining - Haas Pavilion Concession Stands",
+      "name": "Haas Pavilion Concession Stands - Cal Dining",
       "nameID": "HaasPavilion",
       "hours": [
         "SPECIAL EVENTS HOURS",
@@ -450,7 +450,7 @@
     },
     {
       "id": 17,
-      "name": "Cal Dining - Memorial Stadium Concession Stands",
+      "name": "Memorial Stadium Concession Stands - Cal Dining",
       "nameID": "MemorialStadium",
       "hours": [
         "SPECIAL EVENTS HOURS",
@@ -478,7 +478,7 @@
     },
     {
       "id": 18,
-      "name": "Cal Dining - Pat Brown's ",
+      "name": "Pat Brown's - Cal Dining",
       "nameID": "PatBrowns",
       "hours": [
         "7:30am - 5:30pm",
@@ -506,7 +506,7 @@
     },
     {
       "id": 19,
-      "name": "Cal Dining - Terrace Cafe",
+      "name": "Terrace Cafe - Cal Dining",
       "nameID": "TerraceCafe",
       "hours": [
         "7:30am - 3pm",
@@ -534,7 +534,7 @@
     },
     {
       "id": 20,
-      "name": "Cal Dining - The Den",
+      "name": "The Den - Cal Dining",
       "nameID": "TheDen",
       "hours": [
         "7:30am - 12am",
@@ -562,7 +562,7 @@
     },
     {
       "id": 21,
-      "name": "Cal Dining - The Pro Shop (RSF)",
+      "name": "The Pro Shop (RSF) - Cal Dining",
       "nameID": "TheProShop",
       "hours": [
         "7:30am - 10:30pm",
