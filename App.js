@@ -36,13 +36,27 @@ export default class App extends Component<Props> {
 */
 
 const AppNavigator = createStackNavigator({
-  Home: {
-    screen: CafeListScreen
+    Home: {
+      screen: CafeListScreen
+    },
+    Details: {
+      screen: CafeDetailsScreen
+    },
   },
-  Details: {
-    screen: CafeDetailsScreen
+  {
+    initialRouteName: 'Home',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: '#fff',
+        paddingBottom: 5,
+      },
+      headerTintColor: '#000',
+      headerTitleStyle: {
+        
+      },
+    },
   }
-});
+);
 
 const AppContainer = createAppContainer(AppNavigator);
 

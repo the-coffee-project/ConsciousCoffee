@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Image, View, Text, FlatList, StyleSheet} from 'react-native';
-import {List, ListItem} from 'react-native-elements';
+import {Linking, Image, View, Text, FlatList, StyleSheet, Alert} from 'react-native';
+import {List, ListItem, Icon} from 'react-native-elements';
 import {BadgeImages} from 'res/Images.js';
 import {LibStyles} from 'library/styles.js';
 
@@ -9,9 +9,47 @@ import customBadgeData from 'res/badge-data.json';
 const data = customData.cafes;
 const badgeData = customBadgeData.badges;
 
+const infoURL = 'https://www.termsfeed.com/privacy-policy/d369c8b43220552aad9105e3a00e8667';
+
 const extractKey = ({id}) => id.toString();
 
+handleInfoLink = () => {
+  Linking.canOpenURL(infoURL).then(supported => {
+    if (supported) {
+      Linking.openURL(infoURL);
+    } else {
+      console.log("Don't know how to open URI: " + infoURL);
+    }
+  });
+};
+
+handleInfoClick = () => {
+  Alert.alert(
+    'Privacy Policy',
+    'Do you want to navigate to our privacy policy in a browser? This will leave the app.',
+    [
+      {
+        text: 'Cancel',
+        style: 'cancel',
+      },
+      {text: 'Go to Policy', onPress: this.handleInfoLink},
+    ],
+    {cancelable: true},
+  );
+}
+
 export default class CafeListScreen extends Component {
+
+  static navigationOptions = {
+    title: 'Locations',
+    headerRight: (
+      <Icon
+        name='info'
+        style={{paddingRight:10, marginRight: 10}}
+        onPress={handleInfoClick}
+      />
+    ),
+  };
 
   constructor(props) {
     super(props);

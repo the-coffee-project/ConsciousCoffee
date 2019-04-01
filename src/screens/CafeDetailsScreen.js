@@ -13,6 +13,10 @@ const extractKey = ({id}) => id.toString();
 
 export default class CafeDetailsScreen extends Component {
 
+  static navigationOptions = {
+    title: 'Details',
+  };
+
   loadBadges(badges) {
     let items = [];
     for (let i = 0; i < badges.length; i++) {
