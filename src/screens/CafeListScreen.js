@@ -94,12 +94,29 @@ export default class CafeListScreen extends Component {
         for (i = 0; i < this.state.cafes.length; i++) {
           this.state.cafes[i].distanceText = this.state.cafes[i].address;
         }
+        let items = [...this.state.cafes];
+        for(let i in items) {
+          items[i] = Object.assign({}, items[i]);
+        }
+        this.setState({
+          cafes: items,
+        });
       },
       { enableHighAccuracy: true, timeout: 5000, maximumAge: 10000 },
     );
   }
 
   componentDidMount() {
+    for (i = 0; i < this.state.cafes.length; i++) {
+      this.state.cafes[i].distanceText = this.state.cafes[i].address;
+    }
+    let items = [...this.state.cafes];
+    for(let i in items) {
+      items[i] = Object.assign({}, items[i]);
+    }
+    this.setState({
+      cafes: items,
+    });
     this.loadLocation();
   }
 
