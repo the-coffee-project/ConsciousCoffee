@@ -8,7 +8,10 @@
  */
 
 import React, {Component} from 'react';
+import CafeListScreen from 'screens/CafeListScreen';
+import CafeDetailsScreen from 'screens/CafeDetailsScreen';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import {createStackNavigator, createAppContainer} from "react-navigation";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -31,13 +34,34 @@ export default class App extends Component<Props> {
   }
 }
 */
-export default class HelloWorldApp extends Component {
+
+const AppNavigator = createStackNavigator({
+    Home: {
+      screen: CafeListScreen
+    },
+    Details: {
+      screen: CafeDetailsScreen
+    },
+  },
+  {
+    initialRouteName: 'Home',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: '#fff',
+      },
+      headerTintColor: '#000',
+      headerTitleStyle: {
+        
+      },
+    },
+  }
+);
+
+const AppContainer = createAppContainer(AppNavigator);
+
+export default class App extends React.Component {
   render() {
-    return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: '#F5FCFF' }}>
-        <Text>Hello world!</Text>
-      </View>
-    );
+    return <AppContainer />;
   }
 }
 
