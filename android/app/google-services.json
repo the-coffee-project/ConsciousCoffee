@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1007054878694",
+    "firebase_url": "https://consciouscoffee-76017.firebaseio.com",
+    "project_id": "consciouscoffee-76017",
+    "storage_bucket": "consciouscoffee-76017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007054878694:android:85bdb32e3e82077c",
+        "android_client_info": {
+          "package_name": "com.consciouscoffee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007054878694-313uovckp70prtvg3j5249puo7kkj1f3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6zxK2DwdMBzTyC_6Yeyvi2HnrkCTgYXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007054878694-313uovckp70prtvg3j5249puo7kkj1f3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
