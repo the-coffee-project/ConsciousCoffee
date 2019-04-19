@@ -13,6 +13,7 @@
     "react-art": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-native": "0.59.1",
+    "react-native-android-log": "^1.1.0",
     "react-native-elements": "^1.1.0",
     "react-native-gesture-handler": "^1.1.0",
     "react-native-map-link": "^2.4.0",
