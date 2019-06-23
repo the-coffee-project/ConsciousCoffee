@@ -3,6 +3,7 @@ import {Linking, Image, View, Text, FlatList, StyleSheet, Alert} from 'react-nat
 import {List, ListItem, Icon} from 'react-native-elements';
 import {BadgeImages} from 'res/Images.js';
 import {LibStyles} from 'library/styles.js';
+import firebase from './firebase.js';
 
 import customData from 'res/cafe-data.json';
 import customBadgeData from 'res/badge-data.json';
@@ -107,6 +108,8 @@ export default class CafeListScreen extends Component {
   }
 
   componentDidMount() {
+    // console.warn("hi");
+
     for (i = 0; i < this.state.cafes.length; i++) {
       this.state.cafes[i].distanceText = this.state.cafes[i].address;
     }
@@ -117,7 +120,17 @@ export default class CafeListScreen extends Component {
     this.setState({
       cafes: items,
     });
-    this.loadLocation();
+    
+    ref = firebase.database().ref("cafes");
+    // console.warn("Retrieving Data from Firebase");
+    ref.once('value').then((snapshot) => {
+      // alert("Firebase Loaded");
+      // alert(snapshot.val());
+      this.setState({ cafes: snapshot.val() });
+      // alert(snapshot.val());
+      // alert("finished setting state");
+      this.loadLocation();
+    });
   }
 
   calcDistance(lat1, lon1, lat2, lon2) {
