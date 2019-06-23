@@ -108,7 +108,7 @@ export default class CafeListScreen extends Component {
   }
 
   componentDidMount() {
-    console.warn("hi");
+    // console.warn("hi");
 
     for (i = 0; i < this.state.cafes.length; i++) {
       this.state.cafes[i].distanceText = this.state.cafes[i].address;
@@ -122,13 +122,13 @@ export default class CafeListScreen extends Component {
     });
     
     ref = firebase.database().ref("cafes");
-    console.warn("Retrieving Data from Firebase");
+    // console.warn("Retrieving Data from Firebase");
     ref.once('value').then((snapshot) => {
-      alert("Firebase Loaded");
-      alert(snapshot.val());
+      // alert("Firebase Loaded");
+      // alert(snapshot.val());
       this.setState({ cafes: snapshot.val() });
-      alert(snapshot.val());
-      alert("finished setting state");
+      // alert(snapshot.val());
+      // alert("finished setting state");
       this.loadLocation();
     });
   }
