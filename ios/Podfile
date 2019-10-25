@@ -33,13 +33,14 @@ target 'ConsciousCoffee' do
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
   target 'ConsciousCoffeeTests' do
     inherit! :search_paths
     # Pods for testing
   end
-
-  use_native_modules!
 end
 
 target 'ConsciousCoffee-tvOS' do
