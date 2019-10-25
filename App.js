@@ -9,15 +9,17 @@
 import React from 'react';
 import CafeListScreen from 'screens/CafeListScreen';
 import CafeDetailsScreen from 'screens/CafeDetailsScreen';
-import {createStackNavigator, createAppContainer} from "react-navigation";
+import HelloWorldScreen from 'screens/HelloWorldScreen';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
 
 const AppNavigator = createStackNavigator({
     Home: {
-      screen: HelloWorldScreen
+      screen: CafeListScreen
     },
     Details: {
-      screen: HelloWorldScreen
+      screen: CafeDetailsScreen
     },
   },
   {
@@ -33,6 +35,8 @@ const AppNavigator = createStackNavigator({
     },
   }
 );
+
+const AppContainer = createAppContainer(AppNavigator);
 
 const App: () => React$Node = () => {
   return (
